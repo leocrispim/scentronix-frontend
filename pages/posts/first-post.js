@@ -3,7 +3,7 @@ import React from 'react';
 import Button from '@material-ui/core/Button';
 import Head from 'next/head'
 import Link from 'next/link'
-import Image from 'next/image'
+import AccessTimeRoundedIcon from '@material-ui/icons/AccessTimeRounded';
 
 export default function FirstPost() {
   return (
@@ -51,23 +51,35 @@ export default function FirstPost() {
             This one-bowl banana bread This one-bowl banana bread This one-bowl banana bread
           </SC.ObjectDescriptionBox>
 
+          <SC.ObjectDetailsBox>
+            <SC.IconWrapper>
+              <AccessTimeRoundedIcon fontSize="inherit"/>
+            </SC.IconWrapper>
+            <SC.ObjectTimingsTitlesBox>
+              <span>PREP</span>
+              <span>PREP</span>
+              <span>PREP</span>
+            </SC.ObjectTimingsTitlesBox>
+            <SC.ObjectTimingsValuesBox>
+              <span>PREP</span>
+              <span>PREP</span>
+              <span>PREP</span>
+            </SC.ObjectTimingsValuesBox>
+          </SC.ObjectDetailsBox>
+
+
         </SC.ContentLeft>
 
         <SC.ContentRight>
           <img 
           src="/images/eso.jpg"
           height={500}
-          width={880}
+          width={860}
           />
         </SC.ContentRight>
       </SC.MainContentContainer>
 
-      {/* <Image
-        src="/images/eso.jpg" // Route of the image file
-        height={800} // Desired size with correct aspect ratio
-        width={1024} // Desired size with correct aspect ratio
-        alt="Cool Wallpaper"
-      /> */}
+
             <h2>
         <Link href="/">
           <a>Back to home</a>
