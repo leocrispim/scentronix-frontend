@@ -28,12 +28,37 @@ export default function FirstPost() {
       </SC.CategoryContainer>
 
       <SC.MainContentContainer>
+
         <SC.ContentLeft>
-          <p>Hello There!</p>
+          <SC.HistoryBox>
+            RECIPES <SC.HistoryDivider>&gt;</SC.HistoryDivider>
+            BREAD <SC.HistoryDivider>&gt;</SC.HistoryDivider> 
+            QUICK BREAD <SC.HistoryDivider>&gt;</SC.HistoryDivider>
+          </SC.HistoryBox>
+
+          <SC.ObjectTitle>
+            Whole-Grain Banana Bread
+          </SC.ObjectTitle>
+
+          <br /> <br />
+
+          <SC.ObjectDescriptionBox>
+            This one-bowl banana bread This one-bowl banana bread This one-bowl banana bread
+            This one-bowl banana bread This one-bowl banana bread This one-bowl banana bread
+            This one-bowl banana bread This one-bowl banana bread This one-bowl banana bread
+            This one-bowl banana bread This one-bowl banana bread This one-bowl banana bread
+            This one-bowl banana bread This one-bowl banana bread This one-bowl banana bread
+            This one-bowl banana bread This one-bowl banana bread This one-bowl banana bread
+          </SC.ObjectDescriptionBox>
+
         </SC.ContentLeft>
 
         <SC.ContentRight>
-          <p>General Kenobi</p>
+          <img 
+          src="/images/eso.jpg"
+          height={500}
+          width={880}
+          />
         </SC.ContentRight>
       </SC.MainContentContainer>
 
