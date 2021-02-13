@@ -6,7 +6,7 @@ import Link from 'next/link'
 import AccessTimeRoundedIcon from '@material-ui/icons/AccessTimeRounded';
 import Breadcrumbs from '@material-ui/core/Breadcrumbs';
 import NavigateNextIcon from '@material-ui/icons/NavigateNext';
-import Typography from '@material-ui/core/Typography';
+import Divider from '@material-ui/core/Divider';
 
 export default function FirstPost() {
   return (
@@ -55,28 +55,49 @@ export default function FirstPost() {
           <br /> <br />
 
           <SC.ObjectDescriptionBox>
-            This one-bowl banana bread This one-bowl banana bread This one-bowl banana bread
-            This one-bowl banana bread This one-bowl banana bread This one-bowl banana bread
-            This one-bowl banana bread This one-bowl banana bread This one-bowl banana bread
-            This one-bowl banana bread This one-bowl banana bread This one-bowl banana bread
-            This one-bowl banana bread This one-bowl banana bread This one-bowl banana bread
-            This one-bowl banana bread This one-bowl banana bread This one-bowl banana bread
+          This one-bowl banana bread --- our 2018 Recipe of the Year ---- 
+          uses the simplest ingredients, but is inscredibly moist and flavorful. 
+          While the recipe calls for a 50/50 mix of flours (all-purpose and whole weat), 
+          we often make teh bread 100% whole wheat, and honestly? 
+          No one can tell, it's that good! And not only is this bread delicious --- it's versatile.
           </SC.ObjectDescriptionBox>
 
           <SC.ObjectDetailsBox>
             <SC.IconWrapper>
               <AccessTimeRoundedIcon fontSize="inherit"/>
             </SC.IconWrapper>
-            <SC.ObjectTimingsTitlesBox>
-              <span>PREP</span>
-              <span>PREP</span>
-              <span>PREP</span>
-            </SC.ObjectTimingsTitlesBox>
-            <SC.ObjectTimingsValuesBox>
-              <span>PREP</span>
-              <span>PREP</span>
-              <span>PREP</span>
-            </SC.ObjectTimingsValuesBox>
+            <SC.ObjectDetailInside1>
+              <SC.ObjectDetailTop>PREP</SC.ObjectDetailTop>
+              <SC.ObjectDetailBot>10 Mins</SC.ObjectDetailBot>
+            </SC.ObjectDetailInside1>
+            <SC.ObjectDetailInside2>
+              <SC.ObjectDetailTop>BAKE</SC.ObjectDetailTop>
+              <SC.ObjectDetailBot>1 hr to 1 hr 15 mins</SC.ObjectDetailBot>
+            </SC.ObjectDetailInside2>
+            <SC.ObjectDetailInside3>
+              <SC.ObjectDetailTop>TOTAL</SC.ObjectDetailTop>
+              <SC.ObjectDetailBot>1 hr 10 mins</SC.ObjectDetailBot>
+            </SC.ObjectDetailInside3>
+          </SC.ObjectDetailsBox>
+
+          <Divider />
+            
+          <SC.ObjectDetailsBox>
+            <SC.IconWrapper>
+              <AccessTimeRoundedIcon fontSize="inherit"/>
+            </SC.IconWrapper>
+            <SC.ObjectDetailInside1>
+              <SC.ObjectDetailTop>PREP</SC.ObjectDetailTop>
+              <SC.ObjectDetailBot>10 Mins</SC.ObjectDetailBot>
+            </SC.ObjectDetailInside1>
+            <SC.ObjectDetailInside2>
+              <SC.ObjectDetailTop>BAKE</SC.ObjectDetailTop>
+              <SC.ObjectDetailBot>1 hr to 1 hr 15 mins</SC.ObjectDetailBot>
+            </SC.ObjectDetailInside2>
+            <SC.ObjectDetailInside3>
+              <SC.ObjectDetailTop>TOTAL</SC.ObjectDetailTop>
+              <SC.ObjectDetailBot>1 hr 10 mins</SC.ObjectDetailBot>
+            </SC.ObjectDetailInside3>
           </SC.ObjectDetailsBox>
 
 

@@ -5,7 +5,7 @@ export const HeaderContainer = styled.div`
   justify-content: space-between;
   height: 70px;
   width: 600px;
-  margin-left: 20%;
+  margin-left: 18%;
   /* background-color: blue; */
 `
 
@@ -21,7 +21,7 @@ export const MealLogo = styled.img`
   height: 128px;
   width: 128px;
   margin-top: -70px;
-  margin-left: 12%;
+  margin-left: 9.4%;
   margin-right: 2%;
 `
 
@@ -35,8 +35,8 @@ export const MainContentContainer = styled.div`
 export const ContentLeft = styled.div`
   display: flex;
   flex-direction: column;
-  width: 75%;
-  padding: 0 10% 0 15%;
+  width: 70%;
+  padding: 0 12% 0 18%;
   /* background-color: purple; */
 `
 
@@ -60,7 +60,7 @@ export const HistoryDivider = styled.p`
 `
 
 export const ObjectTitle = styled.h1`
-  font-size: 60px;
+  font-size: 56px;
   margin: 0;
   padding: 0;
   font-weight: 550;
@@ -82,29 +82,42 @@ export const IconWrapper = styled.div`
 `
 
 export const ObjectDetailsBox = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 9fr;
-  grid-template-rows: 1fr 1fr;
-  margin-top: 10px;
-  background-color: red;
+  display: flex;
+  /* background-color: red; */
 `
 
-export const ObjectTimingsTitlesBox = styled.div`
+export const ObjectDetailInside1 = styled.div`
   display: flex;
-  justify-content: space-evenly;
-  grid-column-start: 2;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 1;
+  flex-direction: column;
+  margin-left: 5px;
+  width: 140px;
+  /* background-color: blue; */
 `
 
-export const ObjectTimingsValuesBox = styled.div`
+export const ObjectDetailInside2 = styled.div`
   display: flex;
-  justify-content: space-between;
-  grid-column-start: 2;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 2;
+  flex-direction: column;
+  margin-left: 5px;
+  width: 200px;
+  /* background-color: green; */
+`
+
+export const ObjectDetailInside3 = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+  width: 260px;
+  /* background-color: yellow; */
+`
+
+export const ObjectDetailTop = styled.p`
+  margin: 10px 0 5px 0;
+  padding: 0;
+`
+
+export const ObjectDetailBot = styled.p`
+  margin: 0;
+  padding: 0;
 `
 
 export const ObjectPicture = styled.image`
