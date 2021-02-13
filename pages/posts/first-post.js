@@ -4,6 +4,9 @@ import Button from '@material-ui/core/Button';
 import Head from 'next/head'
 import Link from 'next/link'
 import AccessTimeRoundedIcon from '@material-ui/icons/AccessTimeRounded';
+import Breadcrumbs from '@material-ui/core/Breadcrumbs';
+import NavigateNextIcon from '@material-ui/icons/NavigateNext';
+import Typography from '@material-ui/core/Typography';
 
 export default function FirstPost() {
   return (
@@ -31,9 +34,18 @@ export default function FirstPost() {
 
         <SC.ContentLeft>
           <SC.HistoryBox>
-            RECIPES <SC.HistoryDivider>&gt;</SC.HistoryDivider>
-            BREAD <SC.HistoryDivider>&gt;</SC.HistoryDivider> 
-            QUICK BREAD <SC.HistoryDivider>&gt;</SC.HistoryDivider>
+            <Breadcrumbs separator={<NavigateNextIcon fontSize="small" color="secondary" />} aria-label="breadcrumb">
+              <a color="inherit">
+                RECIPES
+              </a>
+              <a color="inherit">
+                BREAD
+              </a>
+              <a color="inherit">
+                QUICK BREAD
+              </a>
+              <> </>{/* This line is here to provide an extra ">" at the end of the Breadcrumb */}
+            </Breadcrumbs>
           </SC.HistoryBox>
 
           <SC.ObjectTitle>
