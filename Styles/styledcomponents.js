@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import Button from '@material-ui/core/Button';
 
 export const HeaderContainer = styled.div`
   display: flex;
@@ -53,6 +54,14 @@ export const HistoryBox = styled.div`
   align-content: center;
 `
 
+export const BreadcrumbText = styled.span`
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+  letter-spacing: 0.8px;
+  padding: 0;
+`
+
 export const HistoryDivider = styled.p`
   margin: 0;
   padding: 0;
@@ -64,11 +73,19 @@ export const ObjectTitle = styled.h1`
   margin: 0;
   padding: 0;
   font-weight: 550;
+  /* background-color: red; */
 `
 
 export const ObjectDescriptionBox = styled.div`
   margin-top: 2%;
   margin-bottom: 2%;
+  font-size: 21px;
+`
+
+export const ObjectDescriptionUnderlined = styled.span`
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid black;
 `
 
 export const IconWrapper = styled.div`
@@ -83,13 +100,14 @@ export const IconWrapper = styled.div`
 
 export const ObjectDetailsBox = styled.div`
   display: flex;
+  margin: 5px 0;
   /* background-color: red; */
 `
 
 export const ObjectDetailInside1 = styled.div`
   display: flex;
   flex-direction: column;
-  margin-left: 5px;
+  margin-left: 10px;
   width: 140px;
   /* background-color: blue; */
 `
@@ -110,14 +128,44 @@ export const ObjectDetailInside3 = styled.div`
   /* background-color: yellow; */
 `
 
+export const ObjectResultInside1 = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  width: 220px;
+  font-weight: 550;
+  letter-spacing: 0.8px;
+`
+
+export const ObjectResultInside2 = styled.div`
+  display: flex;
+  margin: 20px 0 0 5px;
+  width: 37%;
+  height: 50px;
+  justify-content: space-between;
+  /* background-color: yellow; */
+`
+
+export const ResultButton = styled(Button)`
+  border-radius: 50%;
+`
+
+
+
 export const ObjectDetailTop = styled.p`
   margin: 10px 0 5px 0;
   padding: 0;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 1.2px;
 `
 
 export const ObjectDetailBot = styled.p`
   margin: 0;
   padding: 0;
+  font-weight: 550;
+  font-size: 21px;
+  letter-spacing: 0px;
 `
 
 export const ObjectPicture = styled.image`
