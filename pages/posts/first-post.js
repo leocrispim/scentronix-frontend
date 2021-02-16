@@ -1,13 +1,15 @@
 import * as SC from '../../Styles/styledcomponents'
 import React from 'react';
-import Button from '@material-ui/core/Button';
 import Head from 'next/head'
 import Link from 'next/link'
-import AccessTimeRoundedIcon from '@material-ui/icons/AccessTimeRounded';
+import Button from '@material-ui/core/Button';
 import Breadcrumbs from '@material-ui/core/Breadcrumbs';
-import NavigateNextIcon from '@material-ui/icons/NavigateNext';
 import Divider from '@material-ui/core/Divider';
+import NavigateNextIcon from '@material-ui/icons/NavigateNext';
 import GroupWorkOutlinedIcon from '@material-ui/icons/GroupWorkOutlined';
+import AddOutlinedIcon from '@material-ui/icons/AddOutlined';
+import PrintOutlinedIcon from '@material-ui/icons/PrintOutlined';
+import AccessTimeRoundedIcon from '@material-ui/icons/AccessTimeRounded';
 
 export default function FirstPost() {
   return (
@@ -18,7 +20,7 @@ export default function FirstPost() {
       
       <SC.HeaderContainer>
         <Button size="large">SHOP</Button>
-        <Button size="large" variant="outlined" >RECIPES</Button>
+        <Button size="large"><SC.SelectedPage>RECIPES</SC.SelectedPage></Button>
         <Button size="large">LEARN</Button>
         <Button size="large">ABOUT</Button>
         <Button size="large">BLOG</Button>
@@ -27,12 +29,11 @@ export default function FirstPost() {
       <SC.CategoryContainer>
         <SC.MealLogo src="/images/meal.png" />
         <Button size="large">CATEGORIES</Button>
-        <Button size="large">COLLECTIONS</Button>
+        <Link href="/"><Button size="large">COLLECTIONS</Button></Link>
         <Button size="large">RESOURCES</Button>
       </SC.CategoryContainer>
 
       <SC.MainContentContainer>
-
         <SC.ContentLeft>
           <SC.HistoryBox>
             <Breadcrumbs separator={<NavigateNextIcon fontSize="small" color="secondary" />} aria-label="breadcrumb">
@@ -53,17 +54,15 @@ export default function FirstPost() {
             Whole-Grain Banana Bread
           </SC.ObjectTitle>
 
-          <br /> <br />
-
           <SC.ObjectDescriptionBox>
-          This one-bowl banana bread ---- our
+          This one-bowl banana bread — our
           &nbsp;
           <SC.ObjectDescriptionUnderlined>2018 Recipe of the Year</SC.ObjectDescriptionUnderlined>
           &nbsp;
-          ---- uses the simplest ingredients, but is inscredibly moist and flavorful. 
+          — uses the simplest ingredients, but is inscredibly moist and flavorful. 
           While the recipe calls for a 50/50 mix of flours (all-purpose and whole weat), 
           we often make teh bread 100% whole wheat, and honestly? 
-          No one can tell, it's that good! And not only is this bread delicious --- it's versatile.
+          No one can tell, it's that good! And not only is this bread delicious — it's versatile.
           </SC.ObjectDescriptionBox>
 
           <SC.ObjectDetailsBox>
@@ -95,32 +94,24 @@ export default function FirstPost() {
               <SC.ObjectDetailBot>1 loaf, 12 generous servings</SC.ObjectDetailBot>
             </SC.ObjectResultInside1>
             <SC.ObjectResultInside2>
-              <Button borderColor="secondary.main" borderRadius="50%" variant="outlined">
-                + SAVE RECIPE
-              </Button>
-              <Button borderColor="primary.main" borderRadius={1} variant="outlined" color="secondary">
-                PRINT
-              </Button>
+              <SC.ResultButtonWrapper>
+                <Button size="large"><AddOutlinedIcon/> &nbsp; SAVE RECIPE</Button>
+              </SC.ResultButtonWrapper>
+              <SC.ResultButtonWrapper>
+                <Button size="large"><PrintOutlinedIcon/> &nbsp; PRINT</Button>
+              </SC.ResultButtonWrapper>
             </SC.ObjectResultInside2>
           </SC.ObjectDetailsBox>
-
         </SC.ContentLeft>
 
         <SC.ContentRight>
           <img 
-          src="/images/eso.jpg"
+          src="/images/bananabread.jpg"
           height={500}
           width={860}
           />
         </SC.ContentRight>
       </SC.MainContentContainer>
-
-
-            {/* <h2>
-        <Link href="/">
-          <a>Back to home</a>
-        </Link>
-      </h2> */}
     </>
   )
 }

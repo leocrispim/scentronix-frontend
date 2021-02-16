@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import Button from '@material-ui/core/Button';
 
 export const HeaderContainer = styled.div`
   display: flex;
@@ -7,7 +6,12 @@ export const HeaderContainer = styled.div`
   height: 70px;
   width: 600px;
   margin-left: 18%;
-  /* background-color: blue; */
+`
+
+export const SelectedPage = styled.span`
+  margin: 0;
+  padding: 0;
+  border-bottom: solid red 2px;
 `
 
 export const CategoryContainer = styled.div`
@@ -30,7 +34,6 @@ export const MainContentContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 50px;
-  /* background-color: blue; */
 `
 
 export const ContentLeft = styled.div`
@@ -38,14 +41,12 @@ export const ContentLeft = styled.div`
   flex-direction: column;
   width: 70%;
   padding: 0 12% 0 18%;
-  /* background-color: purple; */
 `
 
 export const ContentRight = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  /* background-color: green; */
 `
 
 export const HistoryBox = styled.div`
@@ -70,10 +71,10 @@ export const HistoryDivider = styled.p`
 
 export const ObjectTitle = styled.h1`
   font-size: 56px;
-  margin: 0;
+  margin: 20px 0 80px 0;
   padding: 0;
   font-weight: 550;
-  /* background-color: red; */
+  line-height: 60px;
 `
 
 export const ObjectDescriptionBox = styled.div`
@@ -101,7 +102,6 @@ export const IconWrapper = styled.div`
 export const ObjectDetailsBox = styled.div`
   display: flex;
   margin: 5px 0;
-  /* background-color: red; */
 `
 
 export const ObjectDetailInside1 = styled.div`
@@ -109,7 +109,6 @@ export const ObjectDetailInside1 = styled.div`
   flex-direction: column;
   margin-left: 10px;
   width: 140px;
-  /* background-color: blue; */
 `
 
 export const ObjectDetailInside2 = styled.div`
@@ -117,7 +116,6 @@ export const ObjectDetailInside2 = styled.div`
   flex-direction: column;
   margin-left: 5px;
   width: 200px;
-  /* background-color: green; */
 `
 
 export const ObjectDetailInside3 = styled.div`
@@ -125,7 +123,6 @@ export const ObjectDetailInside3 = styled.div`
   flex-direction: column;
   margin-left: 5px;
   width: 260px;
-  /* background-color: yellow; */
 `
 
 export const ObjectResultInside1 = styled.div`
@@ -139,18 +136,11 @@ export const ObjectResultInside1 = styled.div`
 
 export const ObjectResultInside2 = styled.div`
   display: flex;
-  margin: 20px 0 0 5px;
-  width: 37%;
+  margin: 20px 0 0 40px;
+  width: 46%;
   height: 50px;
   justify-content: space-between;
-  /* background-color: yellow; */
 `
-
-export const ResultButton = styled(Button)`
-  border-radius: 50%;
-`
-
-
 
 export const ObjectDetailTop = styled.p`
   margin: 10px 0 5px 0;
@@ -166,6 +156,11 @@ export const ObjectDetailBot = styled.p`
   font-weight: 550;
   font-size: 21px;
   letter-spacing: 0px;
+`
+
+export const ResultButtonWrapper = styled.div`
+  border: solid red 2px;
+  border-radius: 1px;
 `
 
 export const ObjectPicture = styled.image`
