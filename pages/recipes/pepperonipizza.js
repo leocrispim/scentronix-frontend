@@ -12,11 +12,11 @@ import PrintOutlinedIcon from '@material-ui/icons/PrintOutlined';
 import AccessTimeRoundedIcon from '@material-ui/icons/AccessTimeRounded';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 
-export default function WholeGrainBananaBread() {
+export default function PepperoniPizza() {
   return (
     <>
       <Head>
-        <title>Whole-Grain Banana Bread - Fork and Spoon Bakery</title>
+        <title>Pepperoni Pizza - Fork and Spoon Bakery</title>
       </Head>
       
       <SC.HeaderContainer>
@@ -42,28 +42,26 @@ export default function WholeGrainBananaBread() {
                 RECIPES
               </SC.BreadcrumbText>
               <SC.BreadcrumbText color="inherit">
-                BREAD
+                PASTA
               </SC.BreadcrumbText>
               <SC.BreadcrumbText color="inherit">
-                QUICK BREAD
+                COOKED PASTA
               </SC.BreadcrumbText>
               <> </>{/* This line is here to provide an extra ">" at the end of the Breadcrumb */}
             </Breadcrumbs>
           </SC.HistoryBox>
 
           <SC.ObjectTitle>
-            Whole-Grain Banana Bread
+            Pepperoni Pizza
           </SC.ObjectTitle>
 
           <SC.ObjectDescriptionBox>
-          This one-bowl banana bread — our
-          &nbsp;
-          <SC.ObjectDescriptionUnderlined>2018 Recipe of the Year</SC.ObjectDescriptionUnderlined>
-          &nbsp;
-          — uses the simplest ingredients, but is inscredibly moist and flavorful. 
-          While the recipe calls for a 50/50 mix of flours (all-purpose and whole weat), 
-          we often make teh bread 100% whole wheat, and honestly? 
-          No one can tell, it's that good! And not only is this bread delicious — it's versatile.
+          You won't miss the gluten in this crust! —
+          Topped with cheesy goodness and turkey pepperoni, this pizza is bound to be a hit with
+          the whole family.
+          Practice makes perfect! Some ovens are stronger than others so feel free to experiment with
+          the cook timer to see what fits best in your kitchen. Once you've hit the spot you certainly
+          wont stop serving this delicious treat every other weekend to your family.
           </SC.ObjectDescriptionBox>
 
           <SC.ObjectDetailsBox>
@@ -75,12 +73,12 @@ export default function WholeGrainBananaBread() {
               <SC.ObjectDetailBot>10 Mins</SC.ObjectDetailBot>
             </SC.ObjectDetailInside1>
             <SC.ObjectDetailInside2>
-              <SC.ObjectDetailTop>BAKE</SC.ObjectDetailTop>
-              <SC.ObjectDetailBot>1 hr to 1 hr 15 mins</SC.ObjectDetailBot>
+              <SC.ObjectDetailTop>COOK</SC.ObjectDetailTop>
+              <SC.ObjectDetailBot>15 to 20 Mins</SC.ObjectDetailBot>
             </SC.ObjectDetailInside2>
             <SC.ObjectDetailInside3>
               <SC.ObjectDetailTop>TOTAL</SC.ObjectDetailTop>
-              <SC.ObjectDetailBot>1 hr 10 mins</SC.ObjectDetailBot>
+              <SC.ObjectDetailBot>25 to 30 Mins</SC.ObjectDetailBot>
             </SC.ObjectDetailInside3>
           </SC.ObjectDetailsBox>
 
@@ -92,7 +90,7 @@ export default function WholeGrainBananaBread() {
             </SC.IconWrapper>
             <SC.ObjectResultInside1>
               <SC.ObjectDetailTop>YIELD</SC.ObjectDetailTop>
-              <SC.ObjectDetailBot>1 loaf, 12 generous servings</SC.ObjectDetailBot>
+              <SC.ObjectDetailBot>1 large pizza, 8 slices</SC.ObjectDetailBot>
             </SC.ObjectResultInside1>
             <SC.ObjectResultInside2>
               <SC.ResultButtonWrapper>
@@ -107,7 +105,7 @@ export default function WholeGrainBananaBread() {
 
         <SC.ContentRight>
           <img 
-          src="/images/bananabread.jpg"
+          src="/images/pepperonipizza.jpg"
           height={500}
           width={860}
           />

@@ -37,8 +37,8 @@ export const MainContentContainer = styled.div`
   text-align: center;
   width: 100%;
   height: 80.3vh;
-  margin-top: 50px;
-  background-color: blue;
+  margin-top: 20px;
+  /* background-color: blue; */
 `
 
 export const PageTitle = styled.h1`
@@ -57,16 +57,18 @@ export const RecipeTypeArea = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  background-color: green;
+  /* background-color: green; */
   margin-top: 30px;
+  background-color: #f8f5f0;
+  padding: 20px 0;
 `
 
 export const RecipeTypeContainer = styled.div`
   display: grid;
-  background-color: red;
+  /* background-color: red; */
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 4fr;
-  grid-column-gap: 10px;
+  grid-column-gap: 30px;
 `
 
 export const RecipeTypeName = styled.h2`
@@ -80,7 +82,7 @@ export const RecipeTypeName = styled.h2`
 export const RecipeTypeInnerBox = styled.div`
   display: flex;
   flex-direction: column;
-  background-color: purple;
+  /* background-color: purple; */
   grid-row-start: 2;
   grid-row-end: 2;
   grid-row-gap: 2px;
@@ -98,5 +100,18 @@ export const RecipeName = styled.p`
   padding: 0;
   text-transform: capitalize;
   font-weight: 500;
+  font-size: 20px;
+`
+
+export const DisclaimerLabel = styled.div`
+  display: flex;
+  justify-content: center;
+  margin: 120px 0 0 0;
+  padding: 10px;
+  border-radius: 10px;
+  border: solid black 1px;
+  width: 40%;
+  height: 60px;
+  align-self: center;
   font-size: 20px;
 `
