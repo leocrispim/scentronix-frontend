@@ -73,7 +73,7 @@ npm run dev
 You may then freely access the project through your localhost: [localhost:3000](http:localhost:3000)
 <br>
 # IMPORTANT <br>
-**This project was built and tested in a 1920x1080 environment only, it will most likely break in any other resolution**
+**This project was built and tested in a 1920x1080 environment only, it will most likely break in any other resolution** <br>
 <br>
 Preview: <br>
 <br>
