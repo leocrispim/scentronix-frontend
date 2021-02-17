@@ -3,14 +3,9 @@ import React from 'react';
 import Head from 'next/head'
 import Link from 'next/link'
 import Button from '@material-ui/core/Button';
-import Divider from '@material-ui/core/Divider';
+import PriorityHighIcon from '@material-ui/icons/PriorityHigh';
 
-export default function FirstPost() {
-
-  function ListItemLink(props) {
-    return <ListItem button component="a" {...props} />;
-  }
-  
+export default function RecipeBoard() {
   return (
     <>
       <Head>
@@ -20,8 +15,8 @@ export default function FirstPost() {
       <SC.HeaderContainer>
         <Button size="large">SHOP</Button>
         <Button size="large"><SC.SelectedPage>RECIPES</SC.SelectedPage></Button>
-        <Button size="large">LEARN</Button>
-        <Button size="large">ABOUT</Button>
+        <Link href="/learn/tech"><Button size="large">LEARN</Button></Link>
+        <Link href="/"><Button size="large">ABOUT</Button></Link>
         <Button size="large">BLOG</Button>
       </SC.HeaderContainer>
 
@@ -43,16 +38,16 @@ export default function FirstPost() {
 
           <SC.RecipeTypeInnerBox>
             <SC.RecipeTypeSubName>Quick Bread</SC.RecipeTypeSubName>
-            <Link href="/recipes/wholegrainbananabread"><Button><SC.RecipeName>Whole-Grain Banana Bread</SC.RecipeName></Button></Link>
-            <Button><SC.RecipeName>Spicy Toast</SC.RecipeName></Button>
-            <Button><SC.RecipeName>Ham 'n Cheese Rolls</SC.RecipeName></Button>
+            <Link href="/recipes/wholegrainbananabread"><Button><SC.RecipeName>Whole-Grain Banana Bread*</SC.RecipeName></Button></Link>
+            <Button><SC.RecipeName>Chocolate Zucchini Bread</SC.RecipeName></Button>
+            <Button><SC.RecipeName>Grandma's Onion Squares</SC.RecipeName></Button>
           </SC.RecipeTypeInnerBox>
 
           <SC.RecipeTypeInnerBox>
             <SC.RecipeTypeSubName>Cooked Bread</SC.RecipeTypeSubName>
-            <Button><SC.RecipeName>Buttered Toast</SC.RecipeName></Button>
-            <Button><SC.RecipeName>Spicy Toast</SC.RecipeName></Button>
-            <Button><SC.RecipeName>Ham 'n Cheese Rolls</SC.RecipeName></Button>
+            <Button><SC.RecipeName>Lemoni Zucchini Bread</SC.RecipeName></Button>
+            <Button><SC.RecipeName>Soft Sesame Breadsticks</SC.RecipeName></Button>
+            <Button><SC.RecipeName>Cran-Almond Loaf</SC.RecipeName></Button>
           </SC.RecipeTypeInnerBox>
         </SC.RecipeTypeContainer>
 
@@ -61,12 +56,16 @@ export default function FirstPost() {
 
           <SC.RecipeTypeInnerBox>
             <SC.RecipeTypeSubName>Quick Pasta</SC.RecipeTypeSubName>
-            <p>List here</p>
+            <Button><SC.RecipeName>Spaghetti and Meatballs</SC.RecipeName></Button>
+            <Button><SC.RecipeName>Soft Sesame Breadsticks</SC.RecipeName></Button>
+            <Button><SC.RecipeName>Homemade Pasta</SC.RecipeName></Button>
           </SC.RecipeTypeInnerBox>
 
           <SC.RecipeTypeInnerBox>
             <SC.RecipeTypeSubName>Cooked Pasta</SC.RecipeTypeSubName>
-            <p>List here 2</p>
+            <Link href="/recipes/pepperonipizza"><Button><SC.RecipeName>Pepperoni Pizza*</SC.RecipeName></Button></Link>
+            <Button><SC.RecipeName>Spicy Tacos</SC.RecipeName></Button>
+            <Button><SC.RecipeName>Pasta Puttanesca</SC.RecipeName></Button>
           </SC.RecipeTypeInnerBox>
         </SC.RecipeTypeContainer>
 
@@ -75,31 +74,25 @@ export default function FirstPost() {
 
           <SC.RecipeTypeInnerBox>
             <SC.RecipeTypeSubName>Cold Sweets</SC.RecipeTypeSubName>
-            <p>List here</p>
+            <Button><SC.RecipeName>Homemade Ice-Cream</SC.RecipeName></Button>
+            <Button><SC.RecipeName>Chocolate Covered Cream Pie</SC.RecipeName></Button>
+            <Button><SC.RecipeName>Easy Cheesecake</SC.RecipeName></Button>
           </SC.RecipeTypeInnerBox>
 
           <SC.RecipeTypeInnerBox>
             <SC.RecipeTypeSubName>Cooked Sweets</SC.RecipeTypeSubName>
-            <p>List here 2</p>
+            <Button><SC.RecipeName>Chocolate-Chip Cookies</SC.RecipeName></Button>
+            <Button><SC.RecipeName>Boston Cream Donuts</SC.RecipeName></Button>
+            <Button><SC.RecipeName>Varied Muffins</SC.RecipeName></Button>
           </SC.RecipeTypeInnerBox>
         </SC.RecipeTypeContainer>
-
-        <SC.RecipeTypeContainer>
-          <SC.RecipeTypeName>Submitted</SC.RecipeTypeName>
-
-          <SC.RecipeTypeInnerBox>
-            <SC.RecipeTypeSubName>Quick Recipes</SC.RecipeTypeSubName>
-            <p>List here</p>
-          </SC.RecipeTypeInnerBox>
-
-          <SC.RecipeTypeInnerBox>
-            <SC.RecipeTypeSubName>Complex Recipes</SC.RecipeTypeSubName>
-            <p>List here 2</p>
-          </SC.RecipeTypeInnerBox>
-        </SC.RecipeTypeContainer>
-
 
         </SC.RecipeTypeArea>
+
+        <SC.DisclaimerLabel>
+          <PriorityHighIcon fontSize="large" />
+            This is for the most part a static website; only links that are followed by a (*) are functional on this list.
+        </SC.DisclaimerLabel>
       </SC.MainContentContainer>
     </>
   )
