@@ -1,4 +1,4 @@
-import * as SC from '../../Styles/styledcomponents'
+import * as SC from '../../styles/recipestyles'
 import React from 'react';
 import Head from 'next/head'
 import Link from 'next/link'
@@ -10,17 +10,18 @@ import GroupWorkOutlinedIcon from '@material-ui/icons/GroupWorkOutlined';
 import AddOutlinedIcon from '@material-ui/icons/AddOutlined';
 import PrintOutlinedIcon from '@material-ui/icons/PrintOutlined';
 import AccessTimeRoundedIcon from '@material-ui/icons/AccessTimeRounded';
+import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 
 export default function FirstPost() {
   return (
     <>
       <Head>
-        <title>First Page</title>
+        <title>Whole-Grain Banana Bread - Fork and Spoon Bakery</title>
       </Head>
       
       <SC.HeaderContainer>
         <Button size="large">SHOP</Button>
-        <Button size="large"><SC.SelectedPage>RECIPES</SC.SelectedPage></Button>
+        <Link href="/recipes/recipeboard"><Button size="large"><SC.SelectedPage>RECIPES</SC.SelectedPage></Button></Link>
         <Button size="large">LEARN</Button>
         <Button size="large">ABOUT</Button>
         <Button size="large">BLOG</Button>
@@ -29,7 +30,7 @@ export default function FirstPost() {
       <SC.CategoryContainer>
         <SC.MealLogo src="/images/meal.png" />
         <Button size="large">CATEGORIES</Button>
-        <Link href="/"><Button size="large">COLLECTIONS</Button></Link>
+        <Button size="large">COLLECTIONS</Button>
         <Button size="large">RESOURCES</Button>
       </SC.CategoryContainer>
 
@@ -95,10 +96,10 @@ export default function FirstPost() {
             </SC.ObjectResultInside1>
             <SC.ObjectResultInside2>
               <SC.ResultButtonWrapper>
-                <Button size="large"><AddOutlinedIcon/> &nbsp; SAVE RECIPE</Button>
+                <Button size="large" style={{ borderRadius: 1}}><AddOutlinedIcon/> &nbsp; SAVE RECIPE</Button>
               </SC.ResultButtonWrapper>
               <SC.ResultButtonWrapper>
-                <Button size="large"><PrintOutlinedIcon/> &nbsp; PRINT</Button>
+                <Button size="large" style={{ borderRadius: 1}}><PrintOutlinedIcon/> &nbsp; PRINT</Button>
               </SC.ResultButtonWrapper>
             </SC.ObjectResultInside2>
           </SC.ObjectDetailsBox>
@@ -110,6 +111,11 @@ export default function FirstPost() {
           height={500}
           width={860}
           />
+          <SC.BackButtonWrapper>
+            <Link href="/recipes/recipeboard">
+              <Button color="secondary" variant="contained"><ArrowBackIcon /> Back to Recipe Board</Button>
+            </Link>
+          </SC.BackButtonWrapper>
         </SC.ContentRight>
       </SC.MainContentContainer>
     </>

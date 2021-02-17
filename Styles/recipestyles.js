@@ -163,7 +163,10 @@ export const ResultButtonWrapper = styled.div`
   border-radius: 1px;
 `
 
-export const ObjectPicture = styled.image`
-  height: 200px;
-  width: 200px;
+export const BackButtonWrapper = styled.div`
+  justify-self: center;
+  align-self: center;
+  margin-top: 80px;
+  width: 300px;
+  height: 80px;
 `
