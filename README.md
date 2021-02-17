@@ -75,3 +75,5 @@ You may then freely access the project through your localhost: [localhost:3000](
 # IMPORTANT <br>
 **This project was built and tested in a 1920x1080 environment only, it will most likely break in any other resolution**
 <br>
+Preview:
+<img src="https://user-images.githubusercontent.com/59870721/108259338-bba58f80-713f-11eb-8455-0c391e7f05d8.png" />
