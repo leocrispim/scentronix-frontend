@@ -18,7 +18,7 @@ export default function WholeGrainBananaBread() {
       <Head>
         <title>Whole-Grain Banana Bread - Fork and Spoon Bakery</title>
       </Head>
-      
+
       <SC.HeaderContainer>
         <Button size="large">SHOP</Button>
         <Link href="/recipes/recipeboard"><Button size="large"><SC.SelectedPage>RECIPES</SC.SelectedPage></Button></Link>
@@ -56,19 +56,19 @@ export default function WholeGrainBananaBread() {
           </SC.ObjectTitle>
 
           <SC.ObjectDescriptionBox>
-          This one-bowl banana bread — our
-          &nbsp;
+            This one-bowl banana bread — our
+            &nbsp;
           <SC.ObjectDescriptionUnderlined>2018 Recipe of the Year</SC.ObjectDescriptionUnderlined>
-          &nbsp;
-          — uses the simplest ingredients, but is inscredibly moist and flavorful. 
-          While the recipe calls for a 50/50 mix of flours (all-purpose and whole weat), 
-          we often make teh bread 100% whole wheat, and honestly? 
-          No one can tell, it's that good! And not only is this bread delicious — it's versatile.
+            &nbsp;
+            — uses the simplest ingredients, but is inscredibly moist and flavorful.
+            While the recipe calls for a 50/50 mix of flours (all-purpose and whole weat),
+            we often make teh bread 100% whole wheat, and honestly?
+            No one can tell, it's that good! And not only is this bread delicious — it's versatile.
           </SC.ObjectDescriptionBox>
 
           <SC.ObjectDetailsBox>
             <SC.IconWrapper>
-              <AccessTimeRoundedIcon fontSize="inherit"/>
+              <AccessTimeRoundedIcon fontSize="inherit" />
             </SC.IconWrapper>
             <SC.ObjectDetailInside1>
               <SC.ObjectDetailTop>PREP</SC.ObjectDetailTop>
@@ -85,10 +85,10 @@ export default function WholeGrainBananaBread() {
           </SC.ObjectDetailsBox>
 
           <Divider />
-            
+
           <SC.ObjectDetailsBox>
             <SC.IconWrapper>
-              <GroupWorkOutlinedIcon fontSize="inherit"/>
+              <GroupWorkOutlinedIcon fontSize="inherit" />
             </SC.IconWrapper>
             <SC.ObjectResultInside1>
               <SC.ObjectDetailTop>YIELD</SC.ObjectDetailTop>
@@ -96,20 +96,20 @@ export default function WholeGrainBananaBread() {
             </SC.ObjectResultInside1>
             <SC.ObjectResultInside2>
               <SC.ResultButtonWrapper>
-                <Button size="large" style={{ borderRadius: 1}}><AddOutlinedIcon/> &nbsp; SAVE RECIPE</Button>
+                <Button size="large" style={{ borderRadius: 1 }}><AddOutlinedIcon /> &nbsp; SAVE RECIPE</Button>
               </SC.ResultButtonWrapper>
               <SC.ResultButtonWrapper>
-                <Button size="large" style={{ borderRadius: 1}}><PrintOutlinedIcon/> &nbsp; PRINT</Button>
+                <Button size="large" style={{ borderRadius: 1 }}><PrintOutlinedIcon /> &nbsp; PRINT</Button>
               </SC.ResultButtonWrapper>
             </SC.ObjectResultInside2>
           </SC.ObjectDetailsBox>
         </SC.ContentLeft>
 
         <SC.ContentRight>
-          <img 
-          src="/images/bananabread.jpg"
-          height={500}
-          width={860}
+          <img
+            src="/images/bananabread.jpg"
+            height={500}
+            width={860}
           />
           <SC.BackButtonWrapper>
             <Link href="/recipes/recipeboard">

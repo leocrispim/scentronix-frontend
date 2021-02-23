@@ -10,7 +10,7 @@ export default function Tech() {
       <Head>
         <title>Technologies - Fork and Spoon Bakery</title>
       </Head>
-      
+
       <SC.HeaderContainer>
         <Button size="large">SHOP</Button>
         <Link href="/recipes/recipeboard"><Button size="large">RECIPES</Button></Link>
@@ -30,27 +30,25 @@ export default function Tech() {
 
         <h2>This website was built using:</h2>
 
-        <img 
+        <img
           src="/images/nextjsbanner.png"
           height={600}
           width={1080}
-          />
+        />
 
         <SC.ImageWrapper>
-        <img 
-          src="/images/materialuilogo.png"
-          height={540}
-          width={540}
-        />
+          <img
+            src="/images/materialuilogo.png"
+            height={540}
+            width={540}
+          />
         </SC.ImageWrapper>
 
-        <img 
+        <img
           src="/images/styledcomponentsbanner.png"
           height={600}
           width={1080}
         />
-
-
       </SC.MainContentContainer>
     </>
   )

@@ -10,7 +10,7 @@ export default function Home() {
       <Head>
         <title>Fork and Spoon Bakery Home Page!</title>
       </Head>
-      
+
       <SC.HeaderContainer>
         <Button size="large">SHOP</Button>
         <Link href="/recipes/recipeboard"><Button size="large">RECIPES</Button></Link>
@@ -26,9 +26,7 @@ export default function Home() {
       </SC.CategoryContainer>
 
       <SC.MainContentContainer>
-
-        <h1>Hello and welcome</h1>
-
+        <h1>Hello and welcome!</h1>
         <h3>I have left a few page links here for you to check out.</h3>
         <SC.LinksWrapper>
           <Link href="/recipes/recipeboard"><Button color="primary" variant="contained" size="large">Recipe Board</Button></Link>
@@ -37,7 +35,6 @@ export default function Home() {
           <Link href="/learn/tech"><Button color="primary" variant="contained" size="large">Frameworks/Libs used</Button></Link>
         </SC.LinksWrapper>
         <h4>Or if you're feeling adventurous you can explore by yourself by clicking on either the RECIPES or LEARN link on the header.</h4>
-
       </SC.MainContentContainer>
     </>
   )

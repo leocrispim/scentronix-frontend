@@ -38,7 +38,6 @@ export const MainContentContainer = styled.div`
   width: 100%;
   height: 80.3vh;
   margin-top: 20px;
-  /* background-color: blue; */
 `
 
 export const PageTitle = styled.h1`
@@ -57,7 +56,6 @@ export const RecipeTypeArea = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  /* background-color: green; */
   margin-top: 30px;
   background-color: #f8f5f0;
   padding: 20px 0;
@@ -65,7 +63,6 @@ export const RecipeTypeArea = styled.div`
 
 export const RecipeTypeContainer = styled.div`
   display: grid;
-  /* background-color: red; */
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 4fr;
   grid-column-gap: 30px;
@@ -82,7 +79,6 @@ export const RecipeTypeName = styled.h2`
 export const RecipeTypeInnerBox = styled.div`
   display: flex;
   flex-direction: column;
-  /* background-color: purple; */
   grid-row-start: 2;
   grid-row-end: 2;
   grid-row-gap: 2px;

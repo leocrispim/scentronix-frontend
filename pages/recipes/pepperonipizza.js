@@ -18,7 +18,7 @@ export default function PepperoniPizza() {
       <Head>
         <title>Pepperoni Pizza - Fork and Spoon Bakery</title>
       </Head>
-      
+
       <SC.HeaderContainer>
         <Button size="large">SHOP</Button>
         <Link href="/recipes/recipeboard"><Button size="large"><SC.SelectedPage>RECIPES</SC.SelectedPage></Button></Link>
@@ -56,17 +56,17 @@ export default function PepperoniPizza() {
           </SC.ObjectTitle>
 
           <SC.ObjectDescriptionBox>
-          You won't miss the gluten in this crust! —
-          Topped with cheesy goodness and turkey pepperoni, this pizza is bound to be a hit with
-          the whole family.
-          Practice makes perfect! Some ovens are stronger than others so feel free to experiment with
-          the cook timer to see what fits best in your kitchen. Once you've hit the spot you certainly
-          wont stop serving this delicious treat every other weekend to your family.
+            You won't miss the gluten in this crust! —
+            Topped with cheesy goodness and turkey pepperoni, this pizza is bound to be a hit with
+            the whole family.
+            Practice makes perfect! Some ovens are stronger than others so feel free to experiment with
+            the cook timer to see what fits best in your kitchen. Once you've hit the spot you certainly
+            wont stop serving this delicious treat every other weekend to your family.
           </SC.ObjectDescriptionBox>
 
           <SC.ObjectDetailsBox>
             <SC.IconWrapper>
-              <AccessTimeRoundedIcon fontSize="inherit"/>
+              <AccessTimeRoundedIcon fontSize="inherit" />
             </SC.IconWrapper>
             <SC.ObjectDetailInside1>
               <SC.ObjectDetailTop>PREP</SC.ObjectDetailTop>
@@ -83,10 +83,10 @@ export default function PepperoniPizza() {
           </SC.ObjectDetailsBox>
 
           <Divider />
-            
+
           <SC.ObjectDetailsBox>
             <SC.IconWrapper>
-              <GroupWorkOutlinedIcon fontSize="inherit"/>
+              <GroupWorkOutlinedIcon fontSize="inherit" />
             </SC.IconWrapper>
             <SC.ObjectResultInside1>
               <SC.ObjectDetailTop>YIELD</SC.ObjectDetailTop>
@@ -94,20 +94,20 @@ export default function PepperoniPizza() {
             </SC.ObjectResultInside1>
             <SC.ObjectResultInside2>
               <SC.ResultButtonWrapper>
-                <Button size="large" style={{ borderRadius: 1}}><AddOutlinedIcon/> &nbsp; SAVE RECIPE</Button>
+                <Button size="large" style={{ borderRadius: 1 }}><AddOutlinedIcon /> &nbsp; SAVE RECIPE</Button>
               </SC.ResultButtonWrapper>
               <SC.ResultButtonWrapper>
-                <Button size="large" style={{ borderRadius: 1}}><PrintOutlinedIcon/> &nbsp; PRINT</Button>
+                <Button size="large" style={{ borderRadius: 1 }}><PrintOutlinedIcon /> &nbsp; PRINT</Button>
               </SC.ResultButtonWrapper>
             </SC.ObjectResultInside2>
           </SC.ObjectDetailsBox>
         </SC.ContentLeft>
 
         <SC.ContentRight>
-          <img 
-          src="/images/pepperonipizza.jpg"
-          height={500}
-          width={860}
+          <img
+            src="/images/pepperonipizza.jpg"
+            height={500}
+            width={860}
           />
           <SC.BackButtonWrapper>
             <Link href="/recipes/recipeboard">
