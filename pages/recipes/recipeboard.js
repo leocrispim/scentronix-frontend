@@ -11,7 +11,7 @@ export default function RecipeBoard() {
       <Head>
         <title>Recipe Board! - Fork and Spoon Bakery</title>
       </Head>
-      
+
       <SC.HeaderContainer>
         <Button size="large">SHOP</Button>
         <Button size="large"><SC.SelectedPage>RECIPES</SC.SelectedPage></Button>
@@ -33,59 +33,56 @@ export default function RecipeBoard() {
 
         <SC.RecipeTypeArea>
 
-        <SC.RecipeTypeContainer>
-          <SC.RecipeTypeName>Bread</SC.RecipeTypeName>
+          <SC.RecipeTypeContainer>
+            <SC.RecipeTypeName>Bread</SC.RecipeTypeName>
+            <SC.RecipeTypeInnerBox>
+              <SC.RecipeTypeSubName>Quick Bread</SC.RecipeTypeSubName>
+              <Link href="/recipes/wholegrainbananabread"><Button><SC.RecipeName>Whole-Grain Banana Bread*</SC.RecipeName></Button></Link>
+              <Button><SC.RecipeName>Chocolate Zucchini Bread</SC.RecipeName></Button>
+              <Button><SC.RecipeName>Grandma's Onion Squares</SC.RecipeName></Button>
+            </SC.RecipeTypeInnerBox>
 
-          <SC.RecipeTypeInnerBox>
-            <SC.RecipeTypeSubName>Quick Bread</SC.RecipeTypeSubName>
-            <Link href="/recipes/wholegrainbananabread"><Button><SC.RecipeName>Whole-Grain Banana Bread*</SC.RecipeName></Button></Link>
-            <Button><SC.RecipeName>Chocolate Zucchini Bread</SC.RecipeName></Button>
-            <Button><SC.RecipeName>Grandma's Onion Squares</SC.RecipeName></Button>
-          </SC.RecipeTypeInnerBox>
+            <SC.RecipeTypeInnerBox>
+              <SC.RecipeTypeSubName>Cooked Bread</SC.RecipeTypeSubName>
+              <Button><SC.RecipeName>Lemoni Zucchini Bread</SC.RecipeName></Button>
+              <Button><SC.RecipeName>Soft Sesame Breadsticks</SC.RecipeName></Button>
+              <Button><SC.RecipeName>Cran-Almond Loaf</SC.RecipeName></Button>
+            </SC.RecipeTypeInnerBox>
+          </SC.RecipeTypeContainer>
 
-          <SC.RecipeTypeInnerBox>
-            <SC.RecipeTypeSubName>Cooked Bread</SC.RecipeTypeSubName>
-            <Button><SC.RecipeName>Lemoni Zucchini Bread</SC.RecipeName></Button>
-            <Button><SC.RecipeName>Soft Sesame Breadsticks</SC.RecipeName></Button>
-            <Button><SC.RecipeName>Cran-Almond Loaf</SC.RecipeName></Button>
-          </SC.RecipeTypeInnerBox>
-        </SC.RecipeTypeContainer>
+          <SC.RecipeTypeContainer>
+            <SC.RecipeTypeName>Pasta</SC.RecipeTypeName>
+            <SC.RecipeTypeInnerBox>
+              <SC.RecipeTypeSubName>Quick Pasta</SC.RecipeTypeSubName>
+              <Button><SC.RecipeName>Spaghetti and Meatballs</SC.RecipeName></Button>
+              <Button><SC.RecipeName>Soft Sesame Breadsticks</SC.RecipeName></Button>
+              <Button><SC.RecipeName>Homemade Pasta</SC.RecipeName></Button>
+            </SC.RecipeTypeInnerBox>
 
-        <SC.RecipeTypeContainer>
-          <SC.RecipeTypeName>Pasta</SC.RecipeTypeName>
+            <SC.RecipeTypeInnerBox>
+              <SC.RecipeTypeSubName>Cooked Pasta</SC.RecipeTypeSubName>
+              <Link href="/recipes/pepperonipizza"><Button><SC.RecipeName>Pepperoni Pizza*</SC.RecipeName></Button></Link>
+              <Button><SC.RecipeName>Spicy Tacos</SC.RecipeName></Button>
+              <Button><SC.RecipeName>Pasta Puttanesca</SC.RecipeName></Button>
+            </SC.RecipeTypeInnerBox>
+          </SC.RecipeTypeContainer>
 
-          <SC.RecipeTypeInnerBox>
-            <SC.RecipeTypeSubName>Quick Pasta</SC.RecipeTypeSubName>
-            <Button><SC.RecipeName>Spaghetti and Meatballs</SC.RecipeName></Button>
-            <Button><SC.RecipeName>Soft Sesame Breadsticks</SC.RecipeName></Button>
-            <Button><SC.RecipeName>Homemade Pasta</SC.RecipeName></Button>
-          </SC.RecipeTypeInnerBox>
+          <SC.RecipeTypeContainer>
+            <SC.RecipeTypeName>Sweets</SC.RecipeTypeName>
+            <SC.RecipeTypeInnerBox>
+              <SC.RecipeTypeSubName>Cold Sweets</SC.RecipeTypeSubName>
+              <Button><SC.RecipeName>Homemade Ice-Cream</SC.RecipeName></Button>
+              <Button><SC.RecipeName>Chocolate Covered Cream Pie</SC.RecipeName></Button>
+              <Button><SC.RecipeName>Easy Cheesecake</SC.RecipeName></Button>
+            </SC.RecipeTypeInnerBox>
 
-          <SC.RecipeTypeInnerBox>
-            <SC.RecipeTypeSubName>Cooked Pasta</SC.RecipeTypeSubName>
-            <Link href="/recipes/pepperonipizza"><Button><SC.RecipeName>Pepperoni Pizza*</SC.RecipeName></Button></Link>
-            <Button><SC.RecipeName>Spicy Tacos</SC.RecipeName></Button>
-            <Button><SC.RecipeName>Pasta Puttanesca</SC.RecipeName></Button>
-          </SC.RecipeTypeInnerBox>
-        </SC.RecipeTypeContainer>
-
-        <SC.RecipeTypeContainer>
-          <SC.RecipeTypeName>Sweets</SC.RecipeTypeName>
-
-          <SC.RecipeTypeInnerBox>
-            <SC.RecipeTypeSubName>Cold Sweets</SC.RecipeTypeSubName>
-            <Button><SC.RecipeName>Homemade Ice-Cream</SC.RecipeName></Button>
-            <Button><SC.RecipeName>Chocolate Covered Cream Pie</SC.RecipeName></Button>
-            <Button><SC.RecipeName>Easy Cheesecake</SC.RecipeName></Button>
-          </SC.RecipeTypeInnerBox>
-
-          <SC.RecipeTypeInnerBox>
-            <SC.RecipeTypeSubName>Cooked Sweets</SC.RecipeTypeSubName>
-            <Button><SC.RecipeName>Chocolate-Chip Cookies</SC.RecipeName></Button>
-            <Button><SC.RecipeName>Boston Cream Donuts</SC.RecipeName></Button>
-            <Button><SC.RecipeName>Varied Muffins</SC.RecipeName></Button>
-          </SC.RecipeTypeInnerBox>
-        </SC.RecipeTypeContainer>
+            <SC.RecipeTypeInnerBox>
+              <SC.RecipeTypeSubName>Cooked Sweets</SC.RecipeTypeSubName>
+              <Button><SC.RecipeName>Chocolate-Chip Cookies</SC.RecipeName></Button>
+              <Button><SC.RecipeName>Boston Cream Donuts</SC.RecipeName></Button>
+              <Button><SC.RecipeName>Varied Muffins</SC.RecipeName></Button>
+            </SC.RecipeTypeInnerBox>
+          </SC.RecipeTypeContainer>
 
         </SC.RecipeTypeArea>
 
